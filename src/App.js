@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Basic01 from './study/Basic01';
 
 function App() {
-  return (
+  return<Basic01/>;  //Basic01 컴포넌트를 가져와서 리턴
+
+  /* return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +22,8 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  ); */
+  
 }
 
 export default App;
