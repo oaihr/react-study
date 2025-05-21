@@ -31,7 +31,7 @@ function State01(){
             <button onClick={()=>{
                 //cnt2++; // state변수 값을 그냥 변경, 리렌더링X
                 //리렌더링 조건 -> set함수를 통해서 state변수값 변경
-                setCnt2(cnt2 + 1);
+                setCnt2(cnt2 + 1);  // cnt2 = cnt2 + 1;
                 // setCnt2(매개변수){
                 // this.cnt2 = 매개변수;}
                 console.log('cnt2: '+cnt2);
