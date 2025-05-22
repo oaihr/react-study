@@ -2,9 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Basic01 from './study/Basic01';
 import State01 from './study/State01';
-// import Practice01 from './practice/practice01';
+import Practice01 from './practice/practice01/Practice01';
 import State02 from './study/State02';
 import Export01 from './study/Export01';
+import Practice02 from './practice/practice02/Practice02';
 
 function App() {
   //return<Basic01/>;  // JSX기본   Basic01 컴포넌트를 가져와서 리턴
@@ -12,7 +13,7 @@ function App() {
   // return<Practice01/>;
   // return<State02/>;
   // return<Export01/>;
-  return <State02/>;
+  return<Practice02/>;
 
   /* return (
     <div className="App">
