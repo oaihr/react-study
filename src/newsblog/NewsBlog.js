@@ -58,9 +58,9 @@ function NewsBlog(){
                         setInputText('');
                         return;
                     }
-                        let temp = [...day];
-                        temp.push(inputText);
-                        setDay(temp);
+                            let temp = [...day];
+                            temp.push(inputText);
+                            setDay(temp);
 
                     // 배열 state 변수 바꾸는 법: 배열복사 -> 값 변경/추가/삭제 -> set함수로 원래 배열에 저장
                     
