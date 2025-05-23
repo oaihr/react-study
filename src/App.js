@@ -11,6 +11,7 @@ import Props02 from './study/Props02';
 import Practice03 from './practice/practice03/Practice03';
 import NewsBlog from './newsblog/NewsBlog';
 import Practice04 from './practice/practice04/Practice04';
+import FoodMarket from './foodmarket/pages/FoodMarket';
 
 function App() {
   //return<Basic01/>;  // JSX기본   Basic01 컴포넌트를 가져와서 리턴
@@ -22,8 +23,9 @@ function App() {
   // return<Props01/>;
   // return<Props02/>;
   // return<Practice03/>;
-  return<NewsBlog/>;
+  // return<NewsBlog/>;
   // return<Practice04/>;
+  return<FoodMarket/>;
 
   /* return (
     <div className="App">
