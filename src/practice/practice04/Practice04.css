@@ -1,0 +1,13 @@
+button{
+    margin-bottom: 20px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}

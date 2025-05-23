@@ -2,8 +2,7 @@ import { useState } from "react";
 
 function Box(props){
 
-    let [cnt, setCnt] = useState(0);
-    let [day, setDay] = useState(['오늘의 뉴스', '어제의 뉴스', '내일의 뉴스']);
+    const [cnt, setCnt] = useState(0);
 
     return(
         <div className='post-list'>
@@ -13,9 +12,9 @@ function Box(props){
                 <p>내용 무</p>      
                 
                 <button onClick={()=>{
-                    let temp = [...day];
-                    temp[0] = 'Today News';
-                    setDay(temp);                   
+                    let newDay = [...props.currentDay];
+                    newDay[props.index] = props.changeTo;
+                    props.setDay(newDay);          
                 }}>제목변경</button>
         </div>
     );
