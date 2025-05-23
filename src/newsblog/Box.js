@@ -6,7 +6,12 @@ function Box(props){
 
     return(
         <div className='post-list'>
-                <h4>{props.title} <span className='heart'onClick={()=>{
+                <h4 onClick={()=>{
+                    props.setShowModal(!props.showModal);
+                    props.setSelectedTitle(props.title);
+                    props.setSelectedLikeCount(cnt);
+                }}>{props.title} <span className='heart'onClick={(event)=>{
+                    event.stopPropagation();    // 부모요소에 이벤트가 적용되어 있을때 자식요소로의 이벤트 전파를 막겠다
                     setCnt(cnt+1);
                 }}>💖</span> {cnt}</h4>
                 <p>내용 무</p>      
