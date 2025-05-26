@@ -8,6 +8,7 @@ import food1 from '../images/food1.jpg';
 import food2 from '../images/food2.jpg';
 import food3 from '../images/food3.jpg';
 import Home from './Home';
+import Detail from './Detail';
 
 import foodsData from '../data/foodsData';
 import { useState } from 'react';
@@ -80,12 +81,24 @@ function FoodMarket() {
 
                     이동할 경로를 매개변수로 전달하면서 함수 사용
                     navigate("이동할 경로");
+
+                주소창에 포함되어있는 값을 활용
+                /경로/:경로상에서인식할위치,변수명
+                <Route   path='/detail/:id'  >
+                
+                경로 파라미터 인식 -> useParams();
             */}
             
             <Routes>
                 <Route path='/' element={<Home foods={foods}/>}></Route>
                 <Route path='/home' element={<Home foods={foods}/>}></Route>
-                <Route path='/detail' element={<h1>/detail</h1>}></Route>
+                <Route path='/detail/:id' element={<Detail foods={foods}/>}></Route>
+                {/* 
+                    localhost:3000/detail/fd000 
+                    localhost:3000/detail/fd001
+                    localhost:3000/detail/fd002
+                    localhost:3000/detail/fd003
+                */}
 
                 {/* <Route path='/info/company' element={<h1>/info company</h1>}></Route>
                 <Route path='/info/contact' element={<h1>/info contact</h1>}></Route> */}
