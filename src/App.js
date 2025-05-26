@@ -9,9 +9,11 @@ import Practice02 from './practice/practice02/Practice02';
 import Props01 from './study/Props01';
 import Props02 from './study/Props02';
 import Practice03 from './practice/practice03/Practice03';
-import NewsBlog from './newsblog/NewsBlog';
+// import NewsBlog from './newsblog/NewsBlog';
 import Practice04 from './practice/practice04/Practice04';
 import FoodMarket from './foodmarket/pages/FoodMarket';
+import NewsBlog from './practice/pracnews/NewsBlog';
+import Practice05 from './practice/practice05/Practice05';
 
 function App() {
   //return<Basic01/>;  // JSX기본   Basic01 컴포넌트를 가져와서 리턴
@@ -25,7 +27,9 @@ function App() {
   // return<Practice03/>;
   // return<NewsBlog/>;
   // return<Practice04/>;
-  return<FoodMarket/>;
+  // return<FoodMarket/>;
+  // return<NewsBlog/>;
+  return<Practice05/>;
 
   /* return (
     <div className="App">
