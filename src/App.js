@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Basic01 from './study/Basic01';
 import State01 from './study/State01';
 import Practice01 from './practice/practice01/Practice01';
@@ -27,9 +28,9 @@ function App() {
   // return<Practice03/>;
   // return<NewsBlog/>;
   // return<Practice04/>;
-  // return<FoodMarket/>;
+  return<FoodMarket/>;
   // return<NewsBlog/>;
-  return<Practice05/>;
+  // return<Practice05/>;
 
   /* return (
     <div className="App">

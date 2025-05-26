@@ -8,7 +8,13 @@ import food1 from '../images/food1.jpg';
 import food2 from '../images/food2.jpg';
 import food3 from '../images/food3.jpg';
 
+import foodsData from '../data/foodsData';
+import { useState } from 'react';
+import FoodCard from '../components/FoodCard';
+
 function FoodMarket() {
+
+    let [foods, setFoods] = useState(foodsData);
 
     return (
         <div>
@@ -50,52 +56,16 @@ function FoodMarket() {
 
             <Container>
                 <Row>
-                    <Col md={4} sm={6}>
-                        <Card style={{ width: '18rem', marginTop: '3rem' }}>
-                            {/* <Card.Img variant="top" src={food1} /> */}
-                            <Card.Img variant="top" src='/images/food1.jpg' />
-                                                        {/* public 폴더 이용 */}
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4} sm={6}>
-                        <Card style={{ width: '18rem', marginTop: '3rem' }}>
-                            {/* <Card.Img variant="top" src={food2} /> */}
-                            <Card.Img variant="top" src={process.env.PUBLIC_URL +'/images/food2.jpg'} />
-                                                            {/* 정석(앞에 붙임)  */}         {/* public 폴더 이용 */}
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4} sm={6}>
-                        <Card style={{ width: '18rem', marginTop: '3rem'}}>
-                            <Card.Img variant="top" src={food3} />
-                                                    {/* import 해서 이용 */}
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                    {
+                        foods.map((food, index) => {                            
+                            return(
+                                <Col md={4} sm={6}>
+                                    <FoodCard foods={foods} index={index} food={food}/>
+                                </Col>
+                            ) 
+                        })
+                    }
                 </Row>
-
             </Container>
 
         </div>
