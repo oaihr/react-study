@@ -12,10 +12,10 @@ import Props02 from './study/Props02';
 import Practice03 from './practice/practice03/Practice03'; */
 // import NewsBlog from './newsblog/NewsBlog';
 // import Practice04 from './practice/practice04/Practice04';
-/* import FoodMarket from './foodmarket/pages/FoodMarket';
-import Practice05 from './practice/practice05/Practice05'; */
-import NewsBlog from './practice/pracnews/NewsBlog';
-import Practice06 from './practice/practice06/Practice06';
+import FoodMarket from './foodmarket/pages/FoodMarket';
+//import Practice05 from './practice/practice05/Practice05'; 
+//import NewsBlog from './practice/pracnews/NewsBlog';
+//import Practice06 from './practice/practice06/Practice06';
 function App() {
   //return<Basic01/>;  // JSX기본   Basic01 컴포넌트를 가져와서 리턴
   //return<State01/>;   // useState 사용법
@@ -28,10 +28,10 @@ function App() {
   // return<Practice03/>;
   // return<NewsBlog/>;
   // return<Practice04/>;
-  // return<FoodMarket/>;
+  return<FoodMarket/>;
   // return<NewsBlog/>;
   // return<Practice05/>;
-  return<Practice06/>;
+  // return<Practice06/>;
   /* return (
     <div className="App">
       <header className="App-header">

@@ -57,7 +57,7 @@ function FoodMarket() {
 
             {/* <img src={banner_bg}></img>  이미지 태그로도 가능*/}
 
-            {/* 2. 이미지 import 함 */}
+            {/* 1. 이미지 import 함 */}
             {/* <div className='main-bg' style={{backgroundImage: 'url('+banner_bg+')'}}></div> */}
 
             

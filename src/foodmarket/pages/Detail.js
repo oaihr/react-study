@@ -16,6 +16,17 @@ function Detail( {foods} ) {
 
     let food = foods.find((item) => item.id == id);
     
+    //foods.findIndex를 이용하면
+    //if(food == -1) // 해당 값을 갖는 인덱스 없음 -1
+
+    // console.log(food);
+
+    if(food == undefined){ // 잘못된 id값이 들어옴. 해당 id 상품 없음
+        return(
+            <div><h1>존재하지 않는 상품입니다.</h1></div>
+        );
+    }
+
     return (
         <Container>
             <Row>
