@@ -24,7 +24,7 @@ function FoodMarket() {
         <div>
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
-                    <Navbar.Brand href="#home">Market</Navbar.Brand>
+                    <Navbar.Brand onClick={()=>{navigate("/")}}>Market</Navbar.Brand>
                     <Nav className="me-auto">
                         {/* <Nav.Link> <Link to="/">Home</Link> </Nav.Link>
                         <Nav.Link> <Link to="/detail">FoodDetail</Link> </Nav.Link>
