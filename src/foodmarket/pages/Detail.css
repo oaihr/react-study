@@ -14,7 +14,7 @@
 .start {
     opacity: 0;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
 }
 
 .end {
