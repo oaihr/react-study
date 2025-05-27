@@ -4,7 +4,8 @@ let foodsData = [
         title: "Cake",
         content: "당보충 초코 케이크",
         price: 8000,
-        imageUrl: '/images/food1.jpg'
+        imageUrl: '/images/food1.jpg',
+        stockCount: 10
     },
 
     {
@@ -12,7 +13,8 @@ let foodsData = [
         title: "French Fries",
         content: "정신에 좋은 감자튀김",
         price: 9000,
-        imageUrl: '/images/food2.jpg'
+        imageUrl: '/images/food2.jpg',
+        stockCount: 5
     },
 
     {
@@ -20,7 +22,8 @@ let foodsData = [
         title: "Hamburger",
         content: "완전식품 햄버거",
         price: 11000,
-        imageUrl: '/images/food3.jpg'
+        imageUrl: '/images/food3.jpg',
+        stockCount: 0
     }
 ];
 

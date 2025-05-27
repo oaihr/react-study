@@ -22,6 +22,8 @@ function Detail({ foods }) {
     // id : 현재 페이지에서 표시해야하는 food의 id가 확인됨
 
 
+
+
     // lifeCylcle (생성mount, 수정update, 삭제unmount)
     // useEffect(실행할 함수, 의존성 배열)
     // useEffect(실행할 함수{ return ()=>{clean up function} }, 의존성 배열)
@@ -74,9 +76,6 @@ function Detail({ foods }) {
         }, 100)        
     
     },[])
-
-
-
 
 
 
@@ -188,17 +187,25 @@ function Detail({ foods }) {
                     <p className={ ['text-strong', food.price>=10000 ? 'price-red' : 'price-blue'].join(" ")  }>{food.price}</p>
                     
                     <p>
-                        <Button variant="dark" onClick={() => {
+                        <Button variant="dark" onClick={() => {                            
                             if (orderCount > 0)
                                 setOrderCount(orderCount - 1);
                         }}>-</Button>
                         <span> {orderCount} </span>
                         <Button variant="dark" onClick={() => {
-                            setOrderCount(orderCount + 1);
+
+                            if( food.stockCount >= orderCount+1 )
+                                setOrderCount(orderCount+1);
+
+                            /* setOrderCount(orderCount + 1);
+                            if(orderCount >= food.stockCount){
+                                    alert('최대 수량은 '+food.stockCount+'개 입니다.')
+                                    setOrderCount(orderCount + 1);
+                                }               */              
                         }}>+</Button>
                     </p>
 
-                    <Button variant="primary">주문하기</Button>
+                    {food.stockCount==0 ? <Button variant="danger" disabled>품절</Button>:<Button variant="primary">주문하기</Button>}
                 </Col>
             </Row>
 
