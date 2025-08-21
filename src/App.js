@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppJS from './react_spring/AppRS';
+import Login from './react_spring/Login';
 /* import Basic01 from './study/Basic01';
 import State01 from './study/State01';
 import Practice01 from './practice/practice01/Practice01';
@@ -33,6 +34,9 @@ function App() {
   // return<NewsBlog/>;
   // return<Practice05/>;
   // return<Practice06/>;
+  // return <AppJS />
+  return <Login />
+  
   /* return (
     <div className="App">
       <header className="App-header">
@@ -52,7 +56,8 @@ function App() {
     </div>
   ); */
   
-  return <AppJS />
+  
+
 }
 
 export default App;
